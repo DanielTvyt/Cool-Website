@@ -2,25 +2,51 @@
     font-family: Roboto;
 }
 
+p{
+    color: white;
+}
+
+body{
+    background-color:#453e47;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
+    background-color: #453e47;
     padding: 10px;
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(105, 46, 105, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
 }
 
+.main {
+    background-color: rgba(105, 46, 105, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+img{
+    transition: transform .5s;
+}
+
+.main a img:hover {
+    transform:scale(1.1);
+}
+
 .Headline {
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
+    background-color: black;
 }
 
 .Footer {
@@ -30,5 +56,5 @@
 }
 
 .Headline h1 {
-    color: red;
+    color: white;
 }
