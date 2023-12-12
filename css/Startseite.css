@@ -7,19 +7,19 @@ p{
 }
 
 body{
-    background-color:#453e47;
+    background-color:black;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #453e47;
+    background-color: black;
     padding: 10px;
 }
 
-.grid-item {
-    background-color: rgba(105, 46, 105, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+.side {
+    background-color: rgba(61, 29, 61, 0.8);
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -39,20 +39,25 @@ img{
 }
 
 .main a img:hover {
-    transform:scale(1.1);
+    transform:scale(1.15);
 }
 
 .Headline {
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
-    background-color: black;
+    background-color: rgb(15, 14, 31);
 }
 
 .Footer {
     grid-column-start: 1;
     grid-column-end: 4;
-    text-align: center;
+    text-align: left;
+    background-color: rgb(15, 14, 31);
+}
+
+.FooterArrangement{
+    padding: 20px;
 }
 
 .Headline h1 {
