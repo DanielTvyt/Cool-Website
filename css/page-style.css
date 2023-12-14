@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: wheat;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: orange;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    position: sticky;
+    top: 1%;
+    background-color: rgb(196, 196, 196);
+}
+
+nav li {
+    list-style: none;
+    padding: 4px 4px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    background-color: #0000000F;
+}
+
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: white;
+}
+
+.content {
+    float: inline-start;
+    position: static;
+    padding-left: 20px;
+    min-width: 200;
+    margin: 0px;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-width: 20px;
+    border: solid;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+footer img:hover {
+    background-color: red;
+}
