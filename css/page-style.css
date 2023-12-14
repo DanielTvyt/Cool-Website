@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: black;
+    padding: 0;
+    margin: 0;
 }
 
 .grid {
@@ -21,14 +22,14 @@ body {
 }
 
 .sidebar {
-    background-color: orange;
+
 }
 
 nav {
     float: left;
     width: 200px;
     position: sticky;
-    top: 1%;
+    top: 0;
     background-color: rgb(196, 196, 196);
 }
 
@@ -71,5 +72,5 @@ footer {
 }
 
 footer img:hover {
-    background-color: red;
+    
 }
