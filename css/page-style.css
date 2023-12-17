@@ -12,6 +12,11 @@ body {
     margin: 0;
 }
 
+
+a {
+    text-decoration: none;
+}
+
 .grid {
     display: grid;
 
@@ -21,6 +26,8 @@ body {
 .header {
     grid-column-start: 1;
     grid-column-end: 4;
+
+    z-index: 2;
 
     background-color: #141630;
 
@@ -47,24 +54,39 @@ nav {
     width: 250px;
 
     background-color: #1d2a35;
+}
+
+nav ul {
+    padding-left: 10px;
+}
+
+nav h2 {
+    padding-left: 10px;
+    color: #486856;
+}
+
+.main-nav {
+    padding: 5px;
+
+    margin: 0px;
+    margin-bottom: 20px;
 
     border: solid 1px;
     border-radius: 5px; /*Abgerundete Ecken*/
 }
 
-nav ul {
+nav ul:hover {
+    background-color: #38444d;
+}
+
+.Übersicht {
     padding: 5px;
 
     margin: 0px;
     margin-bottom: 20px;
-}
 
-nav ul a {
-    text-decoration: none;
-}
-
-nav ul:hover {
-    background-color: #38444d;
+    border: solid 1px;
+    border-radius: 5px;
 }
 
 main {
@@ -75,7 +97,11 @@ main {
     padding-left: 20px;
     padding-top: 20px;
 
+    z-index: 1; /*Mach main in den Fordergrund. Elemente mit höherem z-index Wert werden vor Elementen mit niedrigerem z-index Wert plaziert*/
+
     background-color: #1d2a35;
+
+    box-shadow: -10px 0 5px 1px #1d2a35, 10px 0 5px 1px #1d2a35;
 }
 
 .content {
@@ -97,14 +123,19 @@ main {
 }
 
 .Introduction {
+    margin-bottom: 30px;
 
-    border-bottom: solid 1px;
+    background-color: #486856;
 }
 
-.Introduction p{
+.Introduction li {
+    margin-left: 30px;
+}
+
+.Introduction p {
     padding: 10px 20px;
 
-    margin-bottom: 20px;
+    margin: 0;
 
     background-color: #486856;
 }
@@ -112,13 +143,15 @@ main {
 .paragraph {
     margin-bottom: 20px;
 
-    border-bottom: solid 1px;
+    border-top: solid 1px;
     border-color: #a8a8a8;
 }
 
 footer {
     grid-column-start: 1;
     grid-column-end: 4;
+
+    z-index: 2;
 
     padding: 20px;
 
