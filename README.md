@@ -1,1 +1,1 @@
-# Ich hasse dich
+# Webseite für das Fach Informatik von Otto, Daniel und Antony.
