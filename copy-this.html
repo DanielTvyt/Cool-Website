@@ -43,7 +43,7 @@
         <div class="content">
 
           <h1>Bestandteile einer E-Mail</h1>
-          <div class="Introduction">
+          <div class="Introduction"> <!--Introduction für eine Einfürung in das Thema benutzen-->
             <p>
               E-Mail ist ein Internetdienst zum Versenden von Textnachrichten, mit denen Anhänge beliebigen Inhalts, wie Bilder, Dokumente oder Dateien, mitversandt werden können. Die meisten E-Mail-Tools bieten auch Funktionen zur Verwaltung von Kalendern, Adressbüchern und Aufgaben.
               <br>
@@ -59,17 +59,34 @@
             <p style="font-weight: 700; font-size: 110%;">Groß- und Kleinschreibung wird bei E-Mail-Adressen nicht berücksichtigt.</p>
           </div>
 
-          <div class="paragraph">
+          <div class="paragraph"> <!--Pragraph benutzen, für einen neuen Absatz-->
             <h2>E-Mail-Protokolle POP3, IMAP & SMTP</h2>
+
             <p>E-Mail-Protokolle sind für den E-Mail-Austausch zwischen einem Client und einem Server.</p>
+
             <h3>SMTP - Simple Mail Transfer Protocol</h3>
             <p>SMTP ist nur für das Senden und Weiterleiten von E-Mails verantwortlich. Zwischen Servern wir SMTP genutzt. Server nutzen jedoch nicht SMTP um E-Mails zu Clients zu schicken, da der Client sie möglicherweise nicht erhält, wenn ihr Computer zum Beispiel ausgeschaltet ist. Stattdessen fragen Clients mit POP3 oder IMAP nach bestimmten Zeitintervallen beim Server an, ob es neue E-Mails gibt</p>
+
             <h3>POP3 - Post Office Protocol, Version 3</h3>
-            <p>Mit POP3 lädt der Client alle neuen E-Mails vom Server runter. Anschließend werden alle E-Mails vom Server gelöscht. Das bedeutet, dass nicht alle Geräte </p>
+            <p>Mit POP3 lädt der Client alle neuen E-Mails vom Server runter. Anschließend werden alle E-Mails vom Server gelöscht. Das bedeutet, dass nicht alle Geräte alle E-Mails bekommen, sondern nur das Gerät, was sie als erstes runterlädt</p>
+
             <h3>IMAP - Internet Message Access Protocol</h3>
+            <p>Mit IMAP macht der Server erst eine Kopie der E-Mails, bevor er sie an den Client schickt. Das bedeutet, dass Geräte, die später anfragen auch die E-Mail bekommen.</p>
+          </div>
+
+          <div class="paragraph">
+            <h2>An, CC und BCC</h2>
+
+            <p>An verwendet man für den Empfänger der E-Mail, logisch. Aber wofür sind CC und BCC?</p>
+
+            <h4>CC - Carbon Copy</h4>
+            <p>Alle Empfänger die unter CC eingetragen sind erhalten eine Kopie der E-Mail. Sie sehen auch die E-Mail-Adressen aller anderen Empfänger, was vielleicht unerwünscht ist. Dafür kommt dann BCC ins Spiel.</p>
+
+            <h4>BCC - Blind carbon Copy</h4>
+            <p>Empfänger die eine E-Mail mit BCC geschickt bekommen, erhalten auch eine Kopie der E-Mail, aber sie wissen nicht, wer die E-Mail noch bekommen hat.</p>
+
           </div>
         </div>
-
       </main>
       
       <div class="sidebar"></div>
