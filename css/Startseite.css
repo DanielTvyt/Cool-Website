@@ -1,9 +1,10 @@
 * {
     font-family: Roboto;
+    color: #ddd;
 }
 
-p{
-    color: white;
+a {
+    text-decoration: none;
 }
 
 body{
@@ -24,25 +25,30 @@ body{
     background-size: 1000px;
     background-position: left;
 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-    border-top: 1px solid rgba(0, 0, 0, 0.8);
-
     padding: 20px;
+
     font-size: 30px;
+
     text-align: center;
+
+    z-index: 0;
 }
 
 .main {
-    background-color: #38444d;
-    border: 3px solid rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
+    background-color: #1d2a35;
+
     padding: 20px;
+
     font-size: 30px;
+
     text-align: center;
     
+    box-shadow: -10px 0 5px 1px #1d2a35, 10px 0 5px 1px #1d2a35;
+
+    z-index: 2;
 }
 
-img{
+img {
     transition: transform .5s;
 }
 
@@ -53,8 +59,12 @@ img{
 .Headline {
     grid-column-start: 1;
     grid-column-end: 4;
+
     text-align: center;
+
     background-color: #141630;
+
+    z-index: 3;
 }
 
 .Footer {
@@ -72,4 +82,44 @@ img{
 
 .Headline h1 {
     color: white;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    position: relative;
+
+    display: flex; /*Google*/
+
+    z-index: 2;
+
+    padding: 20px;
+
+    border-top: solid 1px;
+
+    background-image: url("../images/footer background.png");
+    background-size: 40%;
+}
+
+.Kontakt {
+    width: 300px;
+    height: fit-content;
+}
+
+.YouTube {
+    position: absolute;
+
+    top: 40px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../images/YT Logo Gray.png");
+    background-size: cover;
+}
+
+.YouTube:hover { /*Wenn man mit der Maus über dem YouTube Logo hovert, dann ändert sich das Bild*/
+    background-image: url("../images/YT Logo Red.png");
 }
