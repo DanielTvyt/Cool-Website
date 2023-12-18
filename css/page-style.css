@@ -147,9 +147,17 @@ main {
     border-color: #a8a8a8;
 }
 
+.paragraph h3 {
+    padding-top: 20px;
+}
+
 footer {
     grid-column-start: 1;
     grid-column-end: 4;
+
+    position: relative;
+
+    display: flex; /*Google*/
 
     z-index: 2;
 
@@ -161,7 +169,17 @@ footer {
     background-size: 40%;
 }
 
+.Kontakt {
+    width: 300px;
+    height: fit-content;
+}
+
 .YouTube {
+    position: absolute;
+
+    top: 40px;
+    right: 20px;
+
     width: 50px;
     height: 50px;
 
