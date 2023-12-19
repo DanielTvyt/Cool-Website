@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/page-style.css">
+    <title>Bestandteile von E-Mails</title>
+
+
+
+  </head>
+
+  <body>
+    <div class="grid">
+
+      <header class="header">
+        <a href="Index.html" title="Home"><h1>Name der Webseite</h1></a>
+      </header>
+
+      <div class="sidebar"></div>
+      
+      <main>
+        <nav>
+          <div class="main-nav">
+            <h2>Navigation</h2>
+            <ul><a href="Netzwerk.html">Netzwerk-Topologie und Internetprotokolle</a></ul>
+            <ul><a href="Intra- und Extranet.html">Intra- und Extranet</a></ul>
+            <ul><a href="Culent-Server.html">Culent-Server-Architektur & IP-Adressen</a></ul>
+            <ul><a href="E-Mail.html">Bestandteile einer E-Mail</a></ul>
+            <ul><a href="Suchmachine.html">Suchmachine</a></ul>
+            <ul><a href="Web.html">Web 2.0 & 3.0</a></ul>
+          </div>
+
+          <div class="Übersicht">
+            <h2>Übersicht</h2>
+            <ul><a href = "#Topo">Netzwerk-Topologie</a></ul>
+            <ul><a href ="#Inter">Internetprotokolle</a></ul>
+            <ul>Anhang</ul>
+          </div>
+        </nav>
+
+        <div class="content">
+
+          <h1>Netzwerk-Topologie und Internetprotokolle</h1>
+          <div class="Introduction"> <!--Introduction für eine Einfürung in das Thema benutzen-->
+            <p>
+              Die Netzwerk-Topologie ist die Anordnung und Verbindung der Geräte eines Netzwerkes.
+              <br>
+              <br>
+              <br>
+              <br>
+              
+            </p>
+            
+          </div>
+
+          <div class="paragraph"> <!--Pragraph benutzen, für einen neuen Absatz-->
+            <h2 id="Topo">Netzwerk-Topologie</h2>
+
+            <p>Die Netzwerk-Topologie ist die physische verbindung von Endgeräten in Netzwerken. Es gibt viele wege wie man die Endgeräte verbinden kann und jede möglichkeit hat vor und Nachteile.</p>
+
+            <h3>Zelltopologie</h3>
+            <p>Die Zelltopologie wird bei drathlosen Netzen genutzt. Die Vorteile von drathlosen Verbindungen sind das man keine Kabel verlegen muss und es ist einfacher das Signal durch Wände und decken zu bekommen. Die Nachteile
+                sind die Sicherheit, da sich im Gegensatz zu anderen topologien sich Hacker in das Netzwerk einloggen könnten, da Funknetze häufig auch vor Gebäuden empfangen werden können.
+            </p>
+
+            <h3>Ringtopologie</h3>
+            <p>Bei der Ringtopologie werden die Endgeräte "Ringförmig" angeordnet. Das heißt jedes Endgerät ist mit zwei anderen Verbunden. Der Vorteil davon ist, dass kürzere Kabel verwendet werden müssen aber wenn ein 
+                Gerät ausfällt bricht das ganze Netzwerk zusammen, desswegen ist auch die Fehlersuche erschwert.
+            </p>
+
+            <h3>Vollvermaschung</h3>
+            <p>Bei der Vollvermaschung ist jedes Gerät dierek mit jedem Verbund, heißt wenn ein Gerät ausfällt kann jedes andere noch normal weiter verwendet werden. Der Nachteil ist, dass man viele Kabel verlegen muss,
+                vorallem wenn im Netzwerk viele Endgeräte Verbunden werden müssen.
+            </p>
+
+            <h3>Bustopologie</h3>
+            <p>Die Bustopologie ist die Variante, die am häufigsten verwendet wird. Sie benutzt ein Kable als so genannten Bus, der mit jedem Rechner Verbunden ist. Diese Topologie ist wie die Vollvermaschung voll gegen 
+                Gerät ausfälle geschützt und das mit wesentlich weniger Kabel länge und geringere Komplexität. Allerdings können nie mehrere Geräte gleichzeitig Daten senden, da jedes Signal über das gleiche Kable läuft.
+            </p>
+
+            <h3>Sterntopologie</h3>
+            <p>In der Sterntopologie ist jedes Endgerät mit einem Übertragungsgerät, auch Hub genannt, Verbunden. Es ist auch vor allen Gerät ausfällen sicher bis auf wenn der Hub ausfällt, dann bricht das gesamte Netzwerk zusammen.
+                Diese topologie ist komplexer als die Bustopologie aber wesentlich schneller, da mehrere Geräte gleichzeitig daten übertragen können, außerdem ist es sehr einfach sie zu erweitern.
+            </p>
+          </div>
+
+          <div class="paragraph">
+            <h2 id="Inter">Internetprotokolle</h2>
+
+            <p>Sie sind für den Austausch von Daten zwischen Endgeräten in einem Netzwerk zuständig. Sie koordinieren Daten Pakete und sorgen dafür das sie bei dem richtigen Empfänger ankommen.</p>
+
+            <h3>Aufbau der Datenpakete</h3>
+            <p>Pakete werden mit wichtigen Zusatzinformationen versehen wie der Absender und Empfänger die größe des Pakets, eine Prüfsummer mit der überprüft werden kann ob das Paket vollständig versendet wurde, etc.</p>
+
+            <h3>Internetprotokollfamilien</h3>
+            <p>Sie sind eine Sammlung von Netzwerkprotokollen. Jedes Protokoll hat unterschiedliche aufgaben und kann in einem Schichtmodell dargestellt werden. Jede Schicht benutzt die Schichten unter sich um ihre aufgabe
+                zu erfüllen. Es gibt insgesammt 4 Schichten. Die Oberste Schicht ist die Anwendungsschicht sie ist die schicht die wir sehen sie benutzt "HTTP" um Websites aus dem Internet zu laden. Dafür wird auch die 
+                nächste schicht gebrauch, Schicht 3 sie ist die Transportschicht. Sie ist für den Transport der Daten der jeweiligen Programmen zuständig. Am weitesten verbreitet sind hier "TCP" und "UDP". Die nächste 
+                Schicht ist die Internetschicht sie ist für das Routing also die Wege der Datenpakete in einem Netzwerk zuständig. Sie leitet Datenpakete an das Nächste Zwischenziel an den Router. Das bekannteste Protokoll
+                ist hier "IP" also das "Internet Protocol". Die letzte Schicht ist die Netzzugangsschicht sie verwendet keine Protokolle sondern Verfahren zur physischen Datenübertragung und Zugriffskontrolle.
+            </p>
+
+          </div>
+        </div>
+      </main>
+      
+      <div class="sidebar"></div>
+
+      <footer>
+        <div class="Kontakt">
+          <h2>Kontakt</h2>
+          <p>E-Mail</p>
+          <li>ottoqiyuanchen@gmail.com</li>
+          <li>daniel.voss@gmx.de</li>
+        </div>
+
+        <div class="Quelle">
+          <a href="Quellen.html"><h2>Quellen</h2></a>
+        </div>
+
+        <div class="YouTube"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULcmljayBhc3RsZXk%3D" title="Daniel_TV_Ger"><img src="images/transparent.png" height="50px" width="50px"></a></div> <!--Das Transparente Bild wird benötigt, um draufklicken zu können-->
+      </footer>
+    </div>
+  </body>
+</html>
